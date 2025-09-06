@@ -106,8 +106,7 @@ body:
       description: Paste the output of the following terminal command.
       placeholder: |
         cd your-project-folder/
-        npm ls @webspatial/react-sdk @webspatial/core-sdk @webspatial/vite-plugin \
-        @webspatial/builder @webspatial/platform-visionos vite vite-plugin-html react react-dom
+        npm ls @webspatial/react-sdk @webspatial/core-sdk @webspatial/vite-plugin @webspatial/builder @webspatial/platform-visionos vite vite-plugin-html react react-dom
     validations:
       required: true
 
