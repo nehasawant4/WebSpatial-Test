@@ -1,0 +1,127 @@
+name: "Bug report (WebSpatial program)"
+description: File a reproducible bug encountered while building with WebSpatial
+labels: ["bug", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug! Please fill in all required fields so triage is fast.
+
+  - type: checkboxes
+    id: duplicates
+    attributes:
+      label: Duplicate check
+      description: Please confirm you searched existing issues and the FAQs.
+      options:
+        - label: "I searched existing issues and discussions"
+          required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: "One-two sentences describing the bug"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected component(s)
+      description: Select all that apply.
+      multiple: true
+      options:
+        - "@webspatial/react-sdk"
+        - "@webspatial/core-sdk"
+        - "@webspatial/vite-plugin"
+        - "@webspatial/builder (run/build)"
+        - "@webspatial/platform-visionos"
+        - "Example templates / starter"
+        - "Docs / Guides"
+        - "Other (describe below)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Exact steps to reproduce the bug are required. Attaching screenshots and console logs is highly recommended for faster resolution.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Describe what you thought would happen if everything worked correctly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Describe what really happened, including error messages or incorrect output.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - "S0 - Blocking (cannot proceed / demo-blocker)"
+        - "S1 - Major (workaround exists but risky)"
+        - "S2 - Minor (no data loss)"
+        - "S3 - Documentation"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### Environment"
+
+  - type: input
+    id: os
+    attributes:
+      label: Host OS & version
+      placeholder: "macOS 14.6.1 (Apple Silicon or Intel)"
+    validations:
+      required: true
+
+  - type: input
+    id: node
+    attributes:
+      label: Node.js version
+      placeholder: "Node -v (eg. 20.19.0)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: packages
+    attributes:
+      label: WebSpatial & Vite versions
+      description: Paste terminal output of following command.
+      placeholder: cd your-project-folder/
+        npm ls @webspatial/react-sdk @webspatial/core-sdk @webspatial/vite-plugin @webspatial/builder @webspatial/platform-visionos vite vite-plugin-html react react-dom
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target
+    attributes:
+      label: Run target
+      multiple: true
+      options:
+        - "Vision Pro device"
+        - "VisionOS Simulator"
+        - "Web Browser (2D)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: workarounds
+    attributes:
+      label: Tried workarounds
