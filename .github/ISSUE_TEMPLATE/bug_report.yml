@@ -103,9 +103,11 @@ body:
     id: packages
     attributes:
       label: WebSpatial & Vite versions
-      description: Paste terminal output of following command.
-      placeholder: cd your-project-folder/
-        npm ls @webspatial/react-sdk @webspatial/core-sdk @webspatial/vite-plugin @webspatial/builder @webspatial/platform-visionos vite vite-plugin-html react react-dom
+      description: Paste the output of the following terminal command.
+      placeholder: |
+        cd your-project-folder/
+        npm ls @webspatial/react-sdk @webspatial/core-sdk @webspatial/vite-plugin \
+        @webspatial/builder @webspatial/platform-visionos vite vite-plugin-html react react-dom
     validations:
       required: true
 
