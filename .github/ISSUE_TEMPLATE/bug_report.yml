@@ -105,8 +105,10 @@ body:
       label: WebSpatial & Vite versions
       description: |
         Paste the output of the following terminal command:
+        ```bash
         cd your-project-folder/
         npm ls @webspatial/react-sdk @webspatial/core-sdk @webspatial/vite-plugin @webspatial/builder @webspatial/platform-visionos vite vite-plugin-html react react-dom
+        ```
     validations:
       required: true
 
