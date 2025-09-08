@@ -1,3 +1,4 @@
+name: ""
 description: File a reproducible bug encountered while building with WebSpatial
 labels: ["bug", "feature"]
 assignees: []
