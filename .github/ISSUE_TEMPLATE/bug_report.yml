@@ -14,7 +14,6 @@ body:
       description: Please confirm you searched existing issues and the FAQs.
       options:
         - label: "I searched existing issues and discussions"
-          required: true
 
   - type: textarea
     id: summary
@@ -39,8 +38,6 @@ body:
         - "Example templates / starter"
         - "Docs / Guides"
         - "Other (describe below)"
-    validations:
-      required: true
 
   - type: textarea
     id: steps
@@ -75,38 +72,31 @@ body:
         - "S1 - Major (workaround exists but risky)"
         - "S2 - Minor (no data loss)"
         - "S3 - Documentation"
-    validations:
-      required: true
 
   - type: markdown
     attributes:
       value: "### Environment"
 
-  - type: input
-    id: os
-    attributes:
-      label: Host OS & version
-      placeholder: "macOS 14.6.1 (Apple Silicon or Intel)"
-    validations:
-      required: true
-
-  - type: input
-    id: node
-    attributes:
-      label: Node.js version
-      placeholder: "Node -v (eg. 20.19.0)"
-    validations:
-      required: true
-
   - type: textarea
-    id: packages
+    id: environment
     attributes:
-      label: WebSpatial & Vite versions
+      label: Environment & Versions
       description: |
-        Paste the output of the following terminal command:
+        Paste the output of the following terminal commands and add your OS details:
+
+        **Host OS & version**
+        Example: macOS 14.6.1 (Apple Silicon or Intel)
+
+        **Node.js version**
+        ```bash
+        node -v
+        ```
+
+        **WebSpatial & Vite packages**
         ```bash
         cd your-project-folder/
-        npm ls @webspatial/react-sdk @webspatial/core-sdk @webspatial/vite-plugin @webspatial/builder @webspatial/platform-visionos vite vite-plugin-html react react-dom
+        npm ls @webspatial/react-sdk @webspatial/core-sdk @webspatial/vite-plugin \
+        @webspatial/builder @webspatial/platform-visionos vite vite-plugin-html react react-dom
         ```
     validations:
       required: true
