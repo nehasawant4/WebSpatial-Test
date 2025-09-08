@@ -74,20 +74,14 @@ body:
         - "S2 - Minor (no data loss)"
         - "S3 - Documentation"
 
-  - type: markdown
-    attributes:
-      value: "### Environment"
-
   - type: textarea
     id: environment
     attributes:
       label: Environment & Versions
       description: |
-        Paste the output of the following terminal commands and add your OS details:
+        **Add your OS details.** Example: macOS 14.6.1 (Apple Silicon or Intel)
 
-        **Host OS & version**
-        Example: macOS 14.6.1 (Apple Silicon or Intel)
-
+        **Paste the output of the following terminal commands**
         **Node.js version**
         ```bash
         node -v
@@ -113,8 +107,3 @@ body:
         - "Web Browser (2D)"
     validations:
       required: true
-
-  - type: textarea
-    id: workarounds
-    attributes:
-      label: Tried workarounds
