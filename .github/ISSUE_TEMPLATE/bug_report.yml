@@ -3,11 +3,6 @@ description: File a reproducible bug encountered while building with WebSpatial
 labels: ["bug", "feature"]
 assignees: []
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for filing a bug! Please fill in all required fields so triage is fast.
-
   - type: checkboxes
     id: duplicates
     attributes:
@@ -28,7 +23,7 @@ body:
     id: steps
     attributes:
       label: Steps to reproduce
-      description: Exact steps to reproduce the bug are required. Attaching screenshots and console logs is highly recommended for faster resolution.
+      description: Exact steps to reproduce the bug are required. 
     validations:
       required: true
 
@@ -44,7 +39,7 @@ body:
     id: actual
     attributes:
       label: Actual behavior
-      description: Describe what really happened, including error messages or incorrect output.
+      description: Describe what really happened, including error messages or incorrect output. Attaching screenshots and console logs is highly recommended for faster resolution.
     validations:
       required: true
 
@@ -53,7 +48,7 @@ body:
     attributes:
       label: Environment & Versions
       description: |
-        **Add your OS details.** Example: macOS 14.6.1 (Apple Silicon or Intel)
+        **Add your device and OS details.** Example: macOS 14.6.1 (Apple Silicon or Intel)
 
         **Paste the output of the following terminal commands**
 
@@ -69,7 +64,7 @@ body:
         @webspatial/builder @webspatial/platform-visionos vite vite-plugin-html react react-dom
         ```
       value: |
-        • Device / Run Target (Vision Pro / Simulator / Browser):
+        • Run Target (Vision Pro / Simulator / Browser):
         • OS:
         • Node.js version:
         • WebSpatial & Vite versions:
