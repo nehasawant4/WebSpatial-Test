@@ -28,18 +28,10 @@ body:
       required: true
 
   - type: textarea
-    id: expected
-    attributes:
-      label: Expected behavior
-      description: Describe what you thought would happen if everything worked correctly.
-    validations:
-      required: true
-
-  - type: textarea
     id: actual
     attributes:
-      label: Actual behavior
-      description: Describe what really happened, including error messages or incorrect output. Attaching screenshots and console logs is highly recommended for faster resolution.
+      label: Expected vs Actual Behavior
+      description: Describe expected and actual behaviour. Attaching screenshots and console logs is highly recommended for faster resolution.
     validations:
       required: true
 
