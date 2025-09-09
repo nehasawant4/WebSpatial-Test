@@ -24,22 +24,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: component
-    attributes:
-      label: Affected component(s)
-      description: Select all that apply.
-      multiple: true
-      options:
-        - "@webspatial/react-sdk"
-        - "@webspatial/core-sdk"
-        - "@webspatial/vite-plugin"
-        - "@webspatial/builder (run/build)"
-        - "@webspatial/platform-visionos"
-        - "Example templates / starter"
-        - "Docs / Guides"
-        - "Other (describe below)"
-
   - type: textarea
     id: steps
     attributes:
@@ -93,17 +77,5 @@ body:
         npm ls @webspatial/react-sdk @webspatial/core-sdk @webspatial/vite-plugin \
         @webspatial/builder @webspatial/platform-visionos vite vite-plugin-html react react-dom
         ```
-    validations:
-      required: true
-
-  - type: dropdown
-    id: target
-    attributes:
-      label: Run target
-      multiple: true
-      options:
-        - "Vision Pro device"
-        - "VisionOS Simulator"
-        - "Web Browser (2D)"
     validations:
       required: true
