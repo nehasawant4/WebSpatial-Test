@@ -23,9 +23,6 @@ body:
     id: steps
     attributes:
       label: Steps to reproduce
-      description: Exact steps to reproduce the bug are required. 
-    validations:
-      required: true
 
   - type: textarea
     id: actual
@@ -38,7 +35,7 @@ body:
   - type: textarea
     id: environment
     attributes:
-      label: Environment & Versions
+      label: Dev Environment
       description: |
         **Add your device and OS details.** Example: macOS 14.6.1 (Apple Silicon or Intel)
 
