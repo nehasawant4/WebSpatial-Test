@@ -12,14 +12,6 @@ body:
         - label: "I searched existing issues and discussions"
 
   - type: textarea
-    id: summary
-    attributes:
-      label: Summary
-      placeholder: "One-two sentences describing the bug"
-    validations:
-      required: true
-
-  - type: textarea
     id: actual
     attributes:
       label: Steps & Expected vs Actual Behavior
