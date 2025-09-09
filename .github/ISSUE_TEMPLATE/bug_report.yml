@@ -7,7 +7,8 @@ body:
     id: duplicates
     attributes:
       label: Duplicate check
-      description: Please confirm you searched existing issues and the FAQs.
+      description: |
+        **Please confirm you searched existing issues and the FAQs.**
       options:
         - label: "I searched existing issues and discussions"
 
@@ -15,7 +16,8 @@ body:
     id: steps
     attributes:
       label: Steps to reproduce
-      description: **Describe how to reproduce the bug.**
+      description: |
+        **Describe how to reproduce the bug.**
     validations:
       required: true
 
@@ -23,7 +25,8 @@ body:
     id: behavior
     attributes:
       label: Expected vs Actual Behavior
-      description: **Describe what output you expected and what actually happened. Screenshots and console logs help speed up resolution!**
+      description: |
+        **Describe what output you expected and what actually happened. Screenshots and console logs help speed up resolution!**
     validations:
       required: true
 
