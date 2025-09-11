@@ -1,5 +1,5 @@
 name: "Bug Report"
-description: File a reproducible bug encountered while building with WebSpatial
+description: Bug template to be used by WebSpatial program participants
 labels: ["bug", "feature"]
 assignees: []
 body:
