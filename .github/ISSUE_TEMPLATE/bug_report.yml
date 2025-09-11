@@ -1,4 +1,4 @@
-name: "Bug Report"
+name: "WebSpatial participant bugs"
 description: Bug template to be used by WebSpatial program participants
 labels: ["bug", "feature"]
 assignees: []
